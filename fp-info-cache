@@ -1,4 +1,4 @@
-28277547039100230
+28304122857012371
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -111607,6 +111607,34 @@ Through hole pin header THT 2x20 2.54mm double row
 0
 86
 43
+lsc-connector-board
+SAMTEC_HLE-105-02-F-DV
+
+
+0
+10
+10
+lsc-connector-board
+SAMTEC_HLE-110-02-F-DV
+
+
+0
+20
+20
+lsc-connector-board
+SAMTEC_HLE-120-02-F-DV-BE
+
+
+0
+40
+40
+lsc-crystal
+CX3225SB16000H0FLJCC
+3.20mm x 2.50mm x 0.55mm
+Crystal or Oscillator
+0
+4
+4
 lsc-dfn-vdfn-tdfn
 DFN-6-1EP_2x2mm_P0.65mm_EP0.8x1.3mm
 DFN, 6 Pin (https://www.onsemi.com/pdf/datasheet/ncp349-d.pdf#page=12), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -111670,6 +111698,13 @@ VDFN, 6-pin, with Exposed Pad and 2 Thermal Vias; Microchip 3SW package
 0
 15
 7
+lsc-dfn-vdfn-tdfn
+XSON6
+SOT886
+Integrated Circuit
+0
+6
+6
 lsc-diode-smd
 DIO_RB050LAM_ROM
 
@@ -111691,6 +111726,13 @@ RBS1LAM40ATR
 0
 2
 2
+lsc-diode-smd
+SOT-23-3_SC-59-3_LITTELFUSE
+SOT23-3_2022
+TVS Diode (Uni-directional)
+0
+3
+3
 lsc-footprints
 1985373
 PTSA 1,5/20-3,5-Z through-hole, 3.5mm pitch, 20 position
@@ -111698,6 +111740,13 @@ Connector
 0
 20
 20
+lsc-footprints
+CX3225SB16000H0FLJCC
+3.20mm x 2.50mm x 0.55mm
+Crystal or Oscillator
+0
+4
+4
 lsc-footprints
 DFN-6-1EP_2x2mm_P0.65mm_EP0.8x1.3mm
 DFN, 6 Pin (https://www.onsemi.com/pdf/datasheet/ncp349-d.pdf#page=12), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -111790,6 +111839,13 @@ PSON65P250X200X100-8N
 8
 8
 lsc-footprints
+PinSocket_1x20_P2.54mm_Vertical
+Through hole straight socket strip, 1x20, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x20 2.54mm single row
+0
+20
+20
+lsc-footprints
 SON65P200X200X55-7N
 
 
@@ -111818,13 +111874,6 @@ VDFN, 6-pin, with Exposed Pad and 2 Thermal Vias; Microchip 3SW package
 15
 7
 lsc-footprints
-nidec_DIP_3_CFS-0301TB
-
-
-0
-6
-6
-lsc-footprints
 nidec_TRIMPOT_FT-63
 Potentiometer, vertical, Nidec FT-63
 Potentiometer vertical FT-63
@@ -111832,9 +111881,44 @@ Potentiometer vertical FT-63
 3
 3
 lsc-led-rgb-smd
+587-1024_DIA
+587 SERIES_2020
+LED
+0
+4
+4
+lsc-led-rgb-smd
+587-1026_DIA
+587 SERIES_2020
+Integrated Circuit RGB LED
+0
+6
+6
+lsc-led-rgb-smd
+587-2054_DIA
+587 SERIES_5050 PLCC-4
+Integrated Circuit
+0
+4
+4
+lsc-led-rgb-smd
+587-2056_DIA
+587 SERIES_5050 PLCC-6
+LED
+0
+6
+6
+lsc-led-rgb-smd
+587-2086_DIA
+587 SERIES_3228 PLCC-6
+Integrated Circuit
+0
+6
+6
+lsc-led-rgb-smd
 599-2310_DIA
-
-599-2310-427F 
+599 SERIES_3030 SMD-8
+599-2310-427F
 0
 9
 9
@@ -111887,6 +111971,13 @@ LED
 0
 2
 2
+lsc-led-smd
+LED_MSL04_ROM
+
+MSL0402RGBU1 
+0
+6
+6
 lsc-module
 rpi_rmc20452t
 
@@ -111894,6 +111985,13 @@ rpi_rmc20452t
 0
 21
 21
+lsc-nidec
+CJS1200TB1
+CJS-1200TB1-7
+Switch
+0
+3
+3
 lsc-nidec
 nidec_DIP_3_CFS-0301TB
 
@@ -111972,19 +112070,26 @@ resistor
 2
 2
 lsc-terminal-block
+1890743
+1890743-2
+Connector
+0
+4
+4
+lsc-terminal-block
+1984963
+1984963-1
+Connector
+0
+2
+2
+lsc-terminal-block
 CONN10_250-1410_WAG
 
 250-1410 
 0
 10
 10
-lsc-terminal-block
-Untitled
-
-
-0
-0
-0
 lsc-terminal-block
 phoenix_contact_1985373
 PTSA 1,5/20-3,5-Z through-hole, 3.5mm pitch, 20 position

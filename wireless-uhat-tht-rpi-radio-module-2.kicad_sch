@@ -8854,7 +8854,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000059ad464a")
 		(property "Reference" "J1"
-			(at 83.82 55.4798 0)
+			(at 83.82 56.388 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8862,7 +8862,7 @@
 			)
 		)
 		(property "Value" "GPIO"
-			(at 83.82 57.785 0)
+			(at 83.82 58.1852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10083,8 +10083,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86d27c85-2953-40a7-9a3b-ea3bedc9b931")
-		(property "Reference" "U2"
-			(at 212.09 63.246 0)
+		(property "Reference" "A1"
+			(at 212.09 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10092,7 +10092,7 @@
 			)
 		)
 		(property "Value" "RMC20452"
-			(at 212.09 65.786 0)
+			(at 212.09 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10192,7 +10192,7 @@
 		(instances
 			(project "wireless-uhat-rpi-radio-module-2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U2")
+					(reference "A1")
 					(unit 1)
 				)
 			)

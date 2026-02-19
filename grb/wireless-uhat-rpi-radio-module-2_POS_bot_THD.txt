@@ -1,9 +1,0 @@
-### Module positions - created on 2026-02-13 10:41
-### Printed by pcb_positions plugin
-## Unit = mm, Angle = deg.
-## Pcb Height 30.100mm, Pcb Width 65.100mm [based on Edge bounding box]
-## Side : bottom
-## Board Aux Origin: 100.000mm ,100.000mm
-# Ref         Val                 Package                       PosX       PosY       Pin1_PosX  Pin1_PosY    Rot     Side      Type
-J1            GPIO                PinSocket_2x20_P2.54mm_Vert.. 8.3700     25.2300    8.3700     -174.7700    -9.0    bottom    THD
-## End

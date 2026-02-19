@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.8,
-          "width": 0.8
+          "drill": 2.7,
+          "height": 2.7,
+          "width": 2.7
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -170,7 +170,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 1,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -245,12 +245,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "lib_symbol_mismatch|914400|1778000|b1f566e9-0031-4962-855e-0c4a126ebda1|00000000-0000-0000-0000-000000000000|||",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -439,9 +434,9 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "ignore",
+      "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
-      "label_dangling": "warning",
+      "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
       "lib_symbol_mismatch": "warning",
@@ -449,14 +444,14 @@
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
-      "multiple_net_names": "ignore",
+      "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
-      "power_pin_not_driven": "ignore",
+      "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
@@ -476,7 +471,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "wireless-uhat-rpi-radio-module-2.kicad_pro",
+    "filename": "wireless-uhat-rpi-radio-module-2_eeprom-joke.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -500,28 +495,12 @@
         "wire_width": 6
       },
       {
-        "name": "3V3",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgb(203, 75, 22)",
-        "track_width": 0.8,
-        "via_diameter": 0.8
-      },
-      {
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgb(220, 50, 47)",
-        "track_width": 0.8,
-        "via_diameter": 0.8
-      },
-      {
         "bus_width": 12,
         "line_style": 0,
         "name": "ANALOG",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
-        "schematic_color": "rgb(42, 161, 152)",
+        "priority": 3,
+        "schematic_color": "rgb(0, 194, 194)",
         "wire_width": 6
       },
       {
@@ -529,8 +508,8 @@
         "line_style": 0,
         "name": "CTRL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
-        "schematic_color": "rgb(38, 139, 194)",
+        "priority": 4,
+        "schematic_color": "rgb(0, 0, 255)",
         "wire_width": 6
       },
       {
@@ -538,9 +517,8 @@
         "line_style": 0,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgb(101, 116, 0)",
-        "track_width": 0.8,
+        "priority": 2,
+        "schematic_color": "rgb(0, 72, 0)",
         "wire_width": 6
       },
       {
@@ -548,8 +526,8 @@
         "line_style": 0,
         "name": "GPIO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(221, 133, 0)",
         "wire_width": 6
       },
       {
@@ -557,10 +535,8 @@
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgb(140, 7, 12)",
-        "track_width": 0.8,
-        "via_diameter": 0.8,
+        "priority": 0,
+        "schematic_color": "rgb(194, 0, 0)",
         "wire_width": 6
       }
     ],
@@ -571,36 +547,88 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "3V3",
-        "pattern": "*3V3"
+        "netclass": "PWR",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VSYS"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VBUS"
       },
       {
         "netclass": "PWR",
         "pattern": "*3V3"
       },
       {
+        "netclass": "GPIO",
+        "pattern": "GPIO*"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "AGND"
+      },
+      {
+        "netclass": "ANALOG",
+        "pattern": "ADC_VREF"
+      },
+      {
+        "netclass": "CTRL",
+        "pattern": "3V3_EN"
+      },
+      {
         "netclass": "PWR",
-        "pattern": "*3V3VDC"
+        "pattern": "+3V3VDC"
       },
       {
-        "netclass": "5V",
-        "pattern": "*5V"
+        "netclass": "CTRL",
+        "pattern": "RUN"
       },
       {
-        "netclass": "5V",
-        "pattern": "*5VDC"
+        "netclass": "CTRL",
+        "pattern": "BOOT"
+      },
+      {
+        "netclass": "CTRL",
+        "pattern": "RESET"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "RUN"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "BOOT"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "RESET"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "ADC_VREF"
       },
       {
         "netclass": "PWR",
         "pattern": "*POWER*"
       },
       {
+        "netclass": "GPIO",
+        "pattern": "/GPIO*"
+      },
+      {
         "netclass": "PWR",
         "pattern": "*PWR*"
       },
       {
-        "netclass": "GPIO",
-        "pattern": "/GPIO*"
+        "netclass": "PWR",
+        "pattern": "3V3"
       },
       {
         "netclass": "PWR",
@@ -611,80 +639,12 @@
         "pattern": "/PWR.*"
       },
       {
-        "netclass": "PWR",
+        "netclass": "Default",
         "pattern": "/VBUS*"
       },
       {
-        "netclass": "5V",
-        "pattern": "/VBUS*"
-      },
-      {
-        "netclass": "CTRL",
-        "pattern": "3V3_EN"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "ADC_VREF"
-      },
-      {
-        "netclass": "ANALOG",
-        "pattern": "ADC_VREF"
-      },
-      {
-        "netclass": "ANALOG",
-        "pattern": "AGND"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "BOOT"
-      },
-      {
-        "netclass": "CTRL",
-        "pattern": "BOOT"
-      },
-      {
         "netclass": "PWR",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "GPIO*"
-      },
-      {
-        "netclass": "CTRL",
-        "pattern": "RESET"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "RESET"
-      },
-      {
-        "netclass": "CTRL",
-        "pattern": "RUN"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "RUN"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "VBUS"
-      },
-      {
-        "netclass": "PWR",
-        "pattern": "VBUS"
-      },
-      {
-        "netclass": "PWR",
-        "pattern": "VSYS"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "VSYS"
+        "pattern": "+5V"
       }
     ]
   },
