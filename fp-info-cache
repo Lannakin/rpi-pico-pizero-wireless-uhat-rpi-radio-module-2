@@ -1,4 +1,4 @@
-28304122857012371
+28305894795400926
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -111607,6 +111607,13 @@ Through hole pin header THT 2x20 2.54mm double row
 0
 86
 43
+lsc-connector-board
+BG12503A110440ND
+BG125-03-A-1-1-0440-N-D-2
+Connector
+0
+3
+3
 lsc-connector-board
 SAMTEC_HLE-105-02-F-DV
 
