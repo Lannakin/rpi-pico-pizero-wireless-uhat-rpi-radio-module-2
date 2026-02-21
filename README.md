@@ -50,7 +50,7 @@ HDMI / DVI connector, just to spite everyone.
   debug header insulation, 12.5 mm  from bottom edge of board to outside top of
   debug header insulation.
 
-* The RM2 is now over the USB ports now I guess
+* The RM2 is now over the USB ports I guess
 
 ## **Component Notes**
 <!-- Click on designators like R1, C5, U3 to highlight on PCB -->
@@ -66,7 +66,7 @@ RPIMCUs.
 Measuring traces on the W5500-EVB-Pico board as a reference.  Thanks Altium for
 the online gerber viewer with a ruler.
 
-| NET               | TRACE WIDTH ()    | CLEARANCE  |
+| NET               | TRACE WIDTH       | CLEARANCE  |
 |-------------------|-------------------|------------|
 | 3V3DVC            | 0.8-0.9 mm        | 0.3 mm     |
 | 5VDC VBUS VSYS    | 0.5 mm            | 0.3 mm     |

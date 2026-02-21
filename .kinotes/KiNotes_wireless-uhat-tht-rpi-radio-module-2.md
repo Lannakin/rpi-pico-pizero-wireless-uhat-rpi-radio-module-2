@@ -12,7 +12,7 @@ to the μHat specification, minus the EEPROM chip, as the RM2 is not compatible
 with anything except the Raspberry Pi microcontrollers (RPIMCU).  The main
 reason I am doing this is because I have an RP2350B A4 revision chip, which is
 part of a Waveshare RP2350-PiZero board.  I wish I knew what the hell their
-tables in the `40Pin OUT` section meant for sure.  Oh well, thank y'all for making
+tables in the 40Pin OUT section meant for sure.  Oh well, thank y'all for making
 the schematic public.
 
 **It should be noted that I am doing this as part of a hobby, and I am not any
@@ -48,7 +48,7 @@ HDMI / DVI connector, just to spite everyone.
   debug header insulation, 12.5 mm  from bottom edge of board to outside top of
   debug header insulation.
 
-* The RM2 is now over the USB ports now I guess
+- The RM2 is now over the USB ports I guess
 
 ## **Component Notes**
 <!-- Click on designators like R1, C5, U3 to highlight on PCB -->
@@ -64,7 +64,7 @@ RPIMCUs.
 Measuring traces on the W5500-EVB-Pico board as a reference.  Thanks Altium for
 the online gerber viewer with a ruler.
 
-| NET               | TRACE WIDTH ()    | CLEARANCE  |
+| NET               | TRACE WIDTH       | CLEARANCE  |
 |-------------------|-------------------|------------|
 | 3V3DVC            | 0.8-0.9 mm        | 0.3 mm     |
 | 5VDC VBUS VSYS    | 0.5 mm            | 0.3 mm     |
@@ -73,18 +73,19 @@ the online gerber viewer with a ruler.
 
 ## **References**
 
-### DESIGN
+### **DESIGN**
 
 [Pimoroni Pico Plus 2 W](https://cdn-shop.adafruit.com/product-files/6243/Pimoroni_Pico_Plus_2_W_Schematic.pdf)
 [Raspberry Pi Pico 2 W](https://datasheets.raspberrypi.com/picow/pico-2-w-schematic.pdf)
 [W5500-EVB-Pico](https://github.com/Wiznet/Hardware-Files-of-WIZnet/tree/master/02_iEthernet/W5500)
 [Waveshare RP2350B-Plus-W](https://files.waveshare.com/wiki/RP2350B-Plus-W/RP2350B-Plus-W.pdf)
 
-### PARTS
+### **PARTS**
 
 [Infineon CYW43439](https://www.mouser.com/datasheet/2/196/Infineon_CYW43439_DataSheet_v03_00_EN-3074791.pdf)
 [RMC20452 aka Raspberry Pi Radio Module 2](https://pip-assets.raspberrypi.com/categories/1216-raspberry-pi-radio-module-2/documents/RP-008943-DS-4-Radio%20Module%202%20Datasheet.pdf)
 
 ---
 
-### KiNotes - PCBtools.xyz
+### **KiNotes - PCBtools.xyz**
+

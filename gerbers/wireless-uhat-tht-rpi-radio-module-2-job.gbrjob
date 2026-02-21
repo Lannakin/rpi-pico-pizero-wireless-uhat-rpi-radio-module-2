@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.7"
     },
-    "CreationDate": "2026-02-20T18:12:18-06:00"
+    "CreationDate": "2026-02-20T19:56:03-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "wireless-uhat-tht-rpi-radio-module-2",
       "GUID": "77697265-6c65-4737-932d-756861742d74",
-      "Revision": "1.1.0"
+      "Revision": "1.2.0"
     },
     "Size": {
       "X": 65.1,
@@ -27,7 +27,7 @@
       "PadToPad": 0.127,
       "PadToTrack": 0.127,
       "TrackToTrack": -0.0,
-      "MinLineWidth": 0.3,
+      "MinLineWidth": 0.2,
       "TrackToRegion": 0.2,
       "RegionToRegion": 0.2
     }
