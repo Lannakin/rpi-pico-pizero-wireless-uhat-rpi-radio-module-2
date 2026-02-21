@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.0,
-          "width": 2.0
+          "height": 0.8,
+          "width": 0.8
         },
         "silk_line_width": 0.127,
         "silk_text_italic": false,
@@ -194,9 +194,7 @@
       "track_widths": [
         0.0,
         0.2,
-        0.3,
-        0.5,
-        0.8
+        0.3
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -236,10 +234,6 @@
         {
           "diameter": 0.634,
           "drill": 0.3
-        },
-        {
-          "diameter": 0.854,
-          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false,
@@ -720,7 +714,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "kicad-embed://pcb-sheet-template0.kicad_wks"
+    "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,

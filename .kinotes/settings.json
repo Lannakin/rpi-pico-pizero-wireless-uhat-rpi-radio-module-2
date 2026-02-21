@@ -30,13 +30,13 @@
   "dark_text_color": "Pure White",
   "dark_mode": false,
   "use_visual_editor": true,
-  "ui_scale_factor": 1.25,
+  "ui_scale_factor": null,
   "crossprobe_enabled": true,
   "net_crossprobe_enabled": true,
   "custom_designators": "",
   "beta_features_enabled": false,
   "beta_markdown": false,
-  "beta_bom": false,
+  "beta_bom": true,
   "beta_version_log": false,
   "beta_debug_panel": false,
   "debug_modules": {
@@ -55,5 +55,7 @@
   "timer_interval_ms": 5000,
   "enable_time_tracking": true,
   "time_format_24h": true,
-  "show_work_diary": true
+  "show_work_diary": true,
+  "panel_width": 1000,
+  "panel_height": 800
 }

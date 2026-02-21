@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.7"
     },
-    "CreationDate": "2026-02-20T18:12:18-06:00"
+    "CreationDate": "2026-02-19T11:55:31-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "wireless-uhat-tht-rpi-radio-module-2",
       "GUID": "77697265-6c65-4737-932d-756861742d74",
-      "Revision": "1.1.0"
+      "Revision": "rev?"
     },
     "Size": {
       "X": 65.1,
@@ -41,6 +41,16 @@
     {
       "Path": "wireless-uhat-tht-rpi-radio-module-2-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "wireless-uhat-tht-rpi-radio-module-2-F_Paste.gtp",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "wireless-uhat-tht-rpi-radio-module-2-B_Paste.gbp",
+      "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -75,26 +85,41 @@
       "Name": "Top Silk Screen"
     },
     {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
       "Type": "SolderMask",
+      "Color": "Green",
+      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
+      "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
+      "Color": "Green",
+      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
     },
     {
       "Type": "Legend",
